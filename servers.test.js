@@ -21,7 +21,7 @@ describe('Servers test (with setup and tear-down)', function () {
 			document.querySelector('#serverTable tbody').children.length
 		).toEqual(1);
 		expect(document.querySelector('#server1').innerText).toEqual(
-			'Dipesh\t$0.00'
+			'Dipesh\t$0.00\tX'
 		);
 	});
 

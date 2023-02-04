@@ -78,7 +78,7 @@ describe('Payments test (with setup and tear-down)', () => {
 			},
 		});
 
-		expect(serverTbody.children[0].innerText).toEqual('Dipesh\t$10.00');
+		expect(serverTbody.children[0].innerText).toEqual('Dipesh\t$10.00\tX');
 		expect(billAmtInput.value).toEqual('');
 		expect(tipAmtInput.value).toEqual('');
 	});
