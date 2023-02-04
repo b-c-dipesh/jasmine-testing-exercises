@@ -40,6 +40,14 @@ describe('Helpers test (with setup and tear-down)', () => {
 		expect(tr.children[0].innerText).toEqual('test');
 	});
 
+	it('should correctly create and appends a delete button on the table row on appendDeleteBtn(tr)', () => {
+		const tr = document.createElement('tr');
+		appendDeleteBtn(tr);
+
+		expect(tr.children.length).toEqual(1);
+		expect(tr.children[0].innerText).toEqual('X');
+	});
+
 	afterEach(() => {
 		// reset data
 		allPayments = {};
